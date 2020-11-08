@@ -1,0 +1,51 @@
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       Abc a= new Abc();
+        a.method();
+         a.method(2);
+         a.method(2,2.2);
+          a.method(2.2,3);
+          a.method(2,4.5,3);
+    }
+}
+
+
+class Abc{
+
+void method (){
+System.out.println("nothing");
+}
+
+void method(int a){
+System.out.println(a);
+}
+
+void method(int a , double b){
+System.out.println(" "+a+" "+b);
+}
+
+void method(double b, int a){
+System.out.println(" "+b+" "+a);
+}
+
+void method(int a , double b, int c){
+System.out.println(" "+a+" "+b+" "+c);
+}
+
+
+}
+
+o/p
+nothing
+2
+ 2 2.2
+ 2.2 3
+ 2 4.5 3
