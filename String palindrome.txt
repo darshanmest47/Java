@@ -1,0 +1,40 @@
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       String a ="darshan";
+       String temp="";
+       for(int j=a.length();j>0;j--){
+       
+       temp+=a.charAt(j-1);
+      System.out.println(temp);
+
+
+}
+System.out.println(temp.length());
+
+if (temp.equals(a)){System.out.println("palindrome");}
+else{System.out.println("not a palindrome");}
+
+
+
+      
+    }
+}
+
+o/p
+n
+na
+nah
+nahs
+nahsr
+nahsra
+nahsrad
+7
+not a palindrome
