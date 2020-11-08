@@ -1,3 +1,7 @@
+
+
+
+
 //'main' method must be in a class 'Rextester'.
 //openjdk version '11.0.5' 
 
@@ -9,7 +13,9 @@ class Rextester
     public static void main(String args[])
     {
       Abc ab= new Abc(5);
+      Abc ab1= new Abc(6);
       System.out.println(ab.a);
+      System.out.println(ab1.a);
       
     }
 }
@@ -19,16 +25,45 @@ class Abc{
 int a=10;
 
 Abc(int a){
-a=a;
-
+this.a=a;
+System.out.println(this);
 
 
 }
 
 }
 
-o/p : 10
-replace a=a with
-this.a
-and o/p will be 5
+o/p
+if in constructor this.a is not written and if simply
+a=a is written then output will be 10
+Abc@5a07e868
+Abc@76ed5528
+5
+6
+
+
+    
+     
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
