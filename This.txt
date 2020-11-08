@@ -22,8 +22,13 @@ Abc(int a){
 a=a;
 
 
+
 }
 
 }
 
 o/p : 10
+replace a=a with
+this.a
+and o/p will be 5
+
