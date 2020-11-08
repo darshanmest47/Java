@@ -1,0 +1,74 @@
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    { 
+     System.out.println("------construcror------");
+       Abc a= new Abc();
+      Abc b = new Abc();
+     Abc c= new Abc(2);
+    System.out.println(c.a);
+     Abc d = new Abc(3.5);
+     System.out.println(d.b);
+      System.out.println("-------method--------");
+        a.method();
+         a.method(2);
+         a.method(2,2.2);
+          a.method(2.2,3);
+          a.method(2,4.5,3);
+    }
+}
+
+
+class Abc{
+int a;
+double b;
+  Abc(){
+System.out.println("empty construction");
+
+}
+
+Abc(int a){ this.a =a;};
+Abc(double b){this.b =b;};
+
+void method (){
+System.out.println("nothing");
+}
+
+void method(int a){
+System.out.println(a);
+}
+
+void method(int a , double b){
+System.out.println(" "+a+" "+b);
+}
+
+void method(double b, int a){
+System.out.println(" "+b+" "+a);
+}
+
+void method(int a , double b, int c){
+System.out.println(" "+a+" "+b+" "+c);
+}
+
+
+}
+
+o/p:
+
+------construcror------
+empty construction
+empty construction
+2
+3.5
+-------method--------
+nothing
+2
+ 2 2.2
+ 2.2 3
+ 2 4.5 3
