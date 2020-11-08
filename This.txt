@@ -1,0 +1,29 @@
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+      Abc ab= new Abc(5);
+      System.out.println(ab.a);
+      
+    }
+}
+
+class Abc{
+
+int a=10;
+
+Abc(int a){
+a=a;
+
+
+}
+
+}
+
+o/p : 10
