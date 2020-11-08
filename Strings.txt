@@ -1,1 +1,47 @@
 
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       String s=" Darshan mesta ";
+       System.out.println(s.length());
+       String s1  = s.trim();
+      System.out.println(s1.length());
+
+     String s2= "my-name-is-anthony-gonsalves";
+     String[] arr = s2.split("-");
+     System.out.println(arr.length);
+    
+
+for(String i:arr){
+System.out.println(i);
+}
+
+String s3= "Darshan";
+System.out.println(s3.equals("Darshan"));
+
+String s4= "Thiruvanatapuram";
+System.out.println(s4.substring(5));
+System.out.println(s4.substring(0,5));
+      
+    }
+}
+
+o/p
+15
+13
+5
+my
+name
+is
+anthony
+gonsalves
+true
+vanatapuram
+Thiru
