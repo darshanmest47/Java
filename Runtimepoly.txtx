@@ -1,0 +1,51 @@
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       A a = new A();
+       a.dispatch();
+      A a1=new B(); // object of B is assigned
+  // to parent object reference type
+
+      A a2= new C();
+
+       a1.dispatch(); // method is getting binded
+// to object at run time 
+       a2.dispatch();
+// here class B is overriding the dispatch from parent
+
+    }
+}
+
+class A{
+void dispatch(){
+System.out.println("dispatch from parent");
+}
+}
+
+class B extends A{
+
+void dispatch (){
+System.out.println("dispatch from B");
+}
+
+}
+
+class C extends A{
+void dispatch (){
+System.out.println("dispatch from C");
+}
+}
+
+O/p
+
+
+dispatch from parent
+dispatch from B
+dispatch from C
