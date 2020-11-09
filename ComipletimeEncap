@@ -1,0 +1,38 @@
+//'main' method must be in a class 'Rextester'.
+//openjdk version '11.0.5' 
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       A a =new A();
+      a.first(); // binded at compile time to object
+      a.first(23); // binded at compile time to object
+      a.first(3.45); // binded at compile time to object
+    }
+}
+
+class A{
+ void first(){
+System.out.println("first method");
+
+}
+
+void first(int a){
+System.out.println("first method with int "+a);
+}
+
+void first(double b){
+System.out.println("first method with double "+b);
+}
+
+}
+
+O/p:
+
+first method
+first method with int 23
+first method with double 3.45
